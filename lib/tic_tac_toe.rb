@@ -47,8 +47,10 @@ def turn(board)
   puts "Please enter 1-9:"
   input = input_to_index(gets.strip)
   if valid_move?(board, input) == true
-    move(board, input, letter)
-    display_board(board)
+    if turn_count(board) % 2 == 0
+      move(board, input, letter)
+      display_board(board)
+    end
   else
   puts "Invalid Entry"
   turn(board)
