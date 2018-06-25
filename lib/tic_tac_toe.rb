@@ -113,9 +113,10 @@ def winner(board)
 end
 
 def play(board)
+  x = 0
+  while x <= 9
   turn(board)
-  while (over?(board)) == false
-    turn(board)
+  x += 1
   end
   winner(board)
 end
