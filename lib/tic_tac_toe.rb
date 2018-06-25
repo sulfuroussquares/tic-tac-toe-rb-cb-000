@@ -58,7 +58,7 @@ def turn(board)
     end
   else
   puts "Invalid Entry"
-  #turn(board)
+  turn(board)
   end
 end
 
