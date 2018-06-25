@@ -48,11 +48,11 @@ def turn(board)
   input = input_to_index(gets.strip)
   if valid_move?(board, input) == true
     if turn_count(board) % 2 == 0
-      letter == "X"
+      letter = "X"
       move(board, input, letter)
       display_board(board)
     else
-      letter == "O"
+      letter = "O"
       move(board, input, letter)
       display_board(board)
     end
