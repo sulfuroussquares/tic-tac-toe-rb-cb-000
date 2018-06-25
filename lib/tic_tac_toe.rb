@@ -115,7 +115,6 @@ end
 def play(board)
   while (turn_count(board) <= 9) && !over?(board)
   turn(board)
-  x += 1
   end
   winner(board)
 end
