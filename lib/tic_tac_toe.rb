@@ -118,5 +118,7 @@ def play(board)
   end
   if over?(board) && won?(board)
     puts winner(board)
+  else
+    turn(board)
   end
 end
