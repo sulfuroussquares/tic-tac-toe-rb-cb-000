@@ -51,6 +51,10 @@ def turn(board)
       letter == "X"
       move(board, input, letter)
       display_board(board)
+    else
+      letter == "O"
+      move(board, input, letter)
+      display_board(board)
     end
   else
   puts "Invalid Entry"
