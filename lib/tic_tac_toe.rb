@@ -114,7 +114,7 @@ end
 
 def play(board)
   turn(board)
-  if over?(board) && won?(board)
+  while (over?(board) && won?(board)) == false
     puts winner(board)
   else
     play(board)
